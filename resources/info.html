@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LiteloaderZMLearn</title>
+    <link rel="stylesheet" href="./info.css" />
+  </head>
+  <body>
+    <h2 class="title"></h2>
+    <br />
+    <span>
+      <a href="javascript:ipcRenderer.send('open-plugins-folder')"
+        >打开插件文件夹</a
+      >
+
+      <a href="javascript:alert('暂未实现')">从压缩包安装插件</a
+      ><a href="javascript:ipcRenderer.send('ll-relaunch')">重启</a></span
+    >
+    <p>加载的插件：</p>
+    <br />
+    <div class="plugins"></div>
+    <script src="./info.js"></script>
+  </body>
+</html>
