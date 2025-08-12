@@ -7,7 +7,7 @@ module.exports = {
     __dirname: false,
   },
   entry: {
-    main: resolve("src/index.js"),
+    index: resolve("src/index.js"),
     preload: resolve("src/renderer/preload.js"),
   },
   output: {

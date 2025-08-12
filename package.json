@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-natives": "cmake-js compile"
+    "configure": "node-gyp configure --arch=ia32",
+    "build-installer": "python -m nuitka --onefile --standalone --lto=no ./installer/installer.py"
   },
   "author": "Howie",
   "license": "ISC",

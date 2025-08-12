@@ -6,6 +6,7 @@ const { forIn } = require("lodash");
 const { mkdirSync, writeFileSync } = require("fs");
 const { VERSION } = require("./shared/constants");
 const { execSync } = require("child_process");
+const { sprintf } = require("sprintf-js");
 
 /**@type {NativeAddon} */
 const native = __non_webpack_require__(
@@ -59,7 +60,14 @@ ipcMain.on("open-plugins-folder", () => {
   execSync(`start ${pluginPath}`);
 });
 
-module.exports = { manager: new PluginManager("main") };
+module.exports = {
+  manager: new PluginManager("main", {
+    version: VERSION,
+    log(...args) {
+      native.print(sprintf(...args), "\n");
+    },
+  }),
+};
 let manager = module.exports.manager;
 manager.loadAll();
 
@@ -80,5 +88,11 @@ app.on("ready", () => {
   });
   protocol.registerFileProtocol("ll", (req, cb) => {
     cb({ path: path.join(__dirname, "resources", new URL(req.url).pathname) });
+  });
+});
+
+app.on("before-quit", (e) => {
+  forIn(manager.plugins, (p) => {
+    p.context.ondisable?.();
   });
 });

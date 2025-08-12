@@ -27,12 +27,21 @@
  * }} PluginManifest
  */
 
-const { readFileSync, readdirSync, statSync } = require("fs");
+const {
+  readFileSync,
+  readdirSync,
+  statSync,
+  existsSync,
+  mkdirSync,
+} = require("fs");
 const path = require("path");
 const { VERSION } = require("./constants");
 const { sprintf } = require("sprintf-js");
 
 const pluginsPath = path.join(__dirname, "../plugins");
+if (!existsSync(pluginsPath)) {
+  mkdirSync(pluginsPath, { recursive: true });
+}
 module.exports.pluginPath = pluginsPath;
 
 class PluginManager {
