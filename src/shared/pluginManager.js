@@ -37,6 +37,7 @@ const {
 const path = require("path");
 const { VERSION } = require("./constants");
 const { sprintf } = require("sprintf-js");
+const JSON = require("comment-json");
 
 const pluginsPath = path.join(__dirname, "../plugins");
 if (!existsSync(pluginsPath)) {
