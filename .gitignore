@@ -13,3 +13,4 @@ installer.build
 installer.dist
 installer.exe
 installer.onefile-build
+/release
