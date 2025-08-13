@@ -2,7 +2,7 @@
 
 首先打开LLZML安装目录下的plugins文件夹，在里面创建一个新的文件夹。用你喜欢的IDE打开这个文件夹，创建plugins.json，根据以下模板填写
 
-```json
+```jsonc
 {
   "name": "<名称>",
   //"author": "[作者]",
