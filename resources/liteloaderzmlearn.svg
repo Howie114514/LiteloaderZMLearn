@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256" fill="none">
+<g  clip-path="url(#clip-path-0_2)">
+<rect x="3" y="47" width="39" height="205" stroke="rgba(191, 13, 13, 1)" stroke-width="6"      fill="#DB4848" >
+</rect>
+<rect x="26" y="55" width="11" height="149"   fill="#FFFFFF" fill-opacity="0.5">
+</rect>
+<rect x="52" y="47" width="39" height="205" stroke="rgba(33, 148, 209, 1)" stroke-width="6"      fill="#3D7ABF" >
+</rect>
+<rect x="75" y="55" width="11" height="149"   fill="#FFFFFF" fill-opacity="0.5">
+</rect>
+<rect x="215" y="62" width="39" height="205" transform="rotate(35.00000134793126 215 62)" stroke="rgba(44, 148, 38, 1)" stroke-width="6"      fill="#3DBF73" >
+</rect>
+<rect x="227" y="80" width="11" height="149" transform="rotate(35.00000134793126 227 80)"   fill="#FFFFFF" fill-opacity="0.5">
+</rect>
+<rect x="96" y="40" width="158" height="18"   fill="#D9A600" >
+</rect>
+<rect x="0" y="25" width="209" height="19"   fill="#947100" >
+</rect>
+</g>
+<defs>
+<clipPath id="clip-path-0_2">
+<path d="M0 256L256 256L256 0L0 0L0 256Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -47,3 +47,14 @@ a {
   margin: 0px;
   margin-left: 5px;
 }
+
+.title {
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

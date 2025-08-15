@@ -4,7 +4,7 @@
   "main": "src/index.js",
   "scripts": {
     "configure": "node-gyp configure --arch=ia32",
-    "build-installer": "python -m nuitka --onefile --standalone --lto=no ./installer/installer.py"
+    "build-installer": "python -m nuitka --onefile --standalone --windows-icon-from-ico=./resources/favicon.ico --lto=no ./installer/installer.py"
   },
   "author": "Howie",
   "license": "ISC",

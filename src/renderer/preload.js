@@ -29,14 +29,14 @@ HTMLElement.prototype.appendChild = new Proxy(
       if (aa[0].className == "person-tip iGdlgU") {
         console.log("菜单创建：", aa[0]);
         events.emit("menuCreated", aa[0]);
-      } else {
-        events.emit("elementRendered", {
-          element: aa[0],
-          cancel() {
-            canceled = true;
-          },
-        });
       }
+      events.emit("elementRendered", {
+        element: aa[0],
+        target: ta,
+        cancel() {
+          canceled = true;
+        },
+      });
       return canceled ? aa[0] : t.apply(ta, aa);
     },
   }

@@ -5,16 +5,18 @@
     <link rel="stylesheet" href="./info.css" />
   </head>
   <body>
-    <h2 class="title"></h2>
-    <br />
-    <span>
-      <a href="javascript:ipcRenderer.send('open-plugins-folder')"
-        >打开插件文件夹</a
-      >
+    <div class="center">
+      <img src="./liteloaderzmlearn.svg" width="30%" height="30%" />
+      <h2 class="title"></h2>
+      <span>
+        <a href="javascript:ipcRenderer.send('open-plugins-folder')"
+          >打开插件文件夹</a
+        >
 
-      <a href="javascript:alert('暂未实现')">从压缩包安装插件</a
-      ><a href="javascript:ipcRenderer.send('ll-relaunch')">重启</a></span
-    >
+        <a href="javascript:alert('暂未实现')">从压缩包安装插件</a
+        ><a href="javascript:ipcRenderer.send('ll-relaunch')">重启</a></span
+      >
+    </div>
     <p>加载的插件：</p>
     <br />
     <div class="plugins"></div>
